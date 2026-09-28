@@ -1,0 +1,11 @@
+# Nothing. This tool is the standard library plus ffmpeg, which is the point:
+# the machine doing the encoding needs no archiver, no database, and no
+# yt-dlp -- only Python, ffmpeg and ffprobe, and read/write access to the
+# archive directory.
+#
+# ffmpeg and ffprobe are found on PATH, or in a directory given with
+# --tools-dir. Builds that include the hardware encoders (nvenc, amf, qsv) are
+# worth preferring; see --encoder list.
+#
+# For the tests only:
+pytest>=8.0
